@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los principales atractivos turísticos de Colombia.">
+    <title>Guía Turística | Explora Colombia</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/turismo.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">COLOMBIA<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Colombia en datos</a></li>
+                <li><a href="turismo.html" class="active">Guía turística</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="hero tourism-hero">
+            <div class="hero-content">
+                <p class="subtitle">DESCUBRE LA BELLEZA DE NUESTRO PAÍS</p>
+
+                <h1>Explora <span>Colombia</span></h1>
+
+                <p>
+                    Desde playas paradisíacas hasta montañas,
+                    ciudades históricas y paisajes naturales.
+                    Descubre algunos de los destinos turísticos
+                    más representativos de Colombia.
+                </p>
+            </div>
+        </section>
+
+        <!-- ATRACTIVOS TURÍSTICOS -->
+        <section class="tourism-section">
+
+            <div class="section-heading">
+                <p class="subtitle">LUGARES PARA DESCUBRIR</p>
+
+                <h2>Destinos turísticos</h2>
+
+                <p>
+                    Conoce 20 atractivos turísticos de Colombia
+                    mediante información obtenida desde API Colombia.
+                </p>
+            </div>
+
+            <!-- CONTADOR DE ATRACTIVOS -->
+            <p id="attractions-count" class="attractions-count"></p>
+
+            <!-- MENSAJE DE CARGA -->
+            <p id="loading-state" class="loading">
+                Cargando destinos turísticos...
+            </p>
+
+            <!-- MENSAJE DE ERROR -->
+            <p id="error-state" class="error" role="alert" hidden>
+                No fue posible cargar los destinos turísticos. Inténtalo nuevamente.
+            </p>
+
+            <!-- CONTENEDOR DINÁMICO -->
+            <div id="attractions-container" class="attractions-grid">
+                <!-- JavaScript insertará aquí las tarjetas turísticas -->
+            </div>
+
+        </section>
+
+        <!-- ENLACE A LA PRIMERA PÁGINA -->
+        <section class="explore-section">
+            <h2>¿Quieres conocer más sobre Colombia?</h2>
+
+            <p>
+                Descubre información general sobre nuestro
+                territorio, población y características.
+            </p>
+
+            <a href="index.html" class="btn-primary">
+                Conocer Colombia
+            </a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>© 2026 Colombia en Datos | Proyecto académico de Johan Cepeda.</p>
+        <p>Información proporcionada por API Colombia.</p>
+    </footer>
+
+    <noscript>
+        Para visualizar los destinos turísticos debes habilitar JavaScript.
+    </noscript>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre información general de Colombia: población, capital, territorio, idiomas y mucho más.">
+    <title>Colombia en Datos | Explora Colombia</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/colombia.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">COLOMBIA<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Colombia en datos</a></li>
+                <li><a href="turismo.html">Guía turística</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle">DESCUBRE NUESTRO PAÍS</p>
+
+                <h1>Colombia en <span>datos</span></h1>
+
+                <p>
+                    Conoce más sobre Colombia, su territorio,
+                    población, cultura y características generales
+                    a través de información obtenida desde una API pública.
+                </p>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN DEL PAÍS -->
+        <section class="country-section">
+
+            <div class="section-heading">
+                <p class="subtitle">INFORMACIÓN GENERAL</p>
+                <h2>Conoce Colombia</h2>
+                <p>Datos generales de nuestro país actualizados desde API Colombia.</p>
+            </div>
+
+            <!-- MENSAJE DE CARGA -->
+            <p id="loading-state" class="loading">
+                Cargando información de Colombia...
+            </p>
+
+            <!-- MENSAJE DE ERROR -->
+            <p id="error-state" class="error" role="alert" hidden>
+                No fue posible cargar la información. Inténtalo nuevamente.
+            </p>
+
+            <!-- CONTENIDO DINÁMICO -->
+            <div id="country-info" class="country-info" hidden>
+                <!-- JavaScript insertará aquí los datos de la API -->
+            </div>
+
+        </section>
+
+        <!-- ENLACE A LA SEGUNDA PÁGINA -->
+        <section class="explore-section">
+            <h2>¿Quieres conocer los destinos de Colombia?</h2>
+
+            <p>
+                Explora algunos de los lugares turísticos más
+                representativos de nuestro país.
+            </p>
+
+            <a href="turismo.html" class="btn-primary">
+                Explorar destinos
+            </a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>© 2026 Colombia en Datos | Proyecto académico de Johan Cepeda.</p>
+        <p>Información proporcionada por API Colombia.</p>
+    </footer>
+
+    <noscript>
+        Para visualizar la información debes habilitar JavaScript en tu navegador.
+    </noscript>
+
+</body>
+
+</html>
