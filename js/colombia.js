@@ -6,6 +6,14 @@ const loadingState = document.getElementById("loading-state");
 const errorState = document.getElementById("error-state");
 const countryInfo = document.getElementById("country-info");
 
+// Activar la animación de entrada después del primer pintado.
+const hero = document.querySelector(".hero");
+if (hero && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    requestAnimationFrame(() => {
+        hero.classList.add("is-entered");
+    });
+}
+
 // FUNCIÓN PARA CREAR TARJETAS DE INFORMACIÓN
 function createInfoCard(title, value) {
     const card = document.createElement("article");
