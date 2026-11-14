@@ -458,6 +458,16 @@ body {
    DISEÑO RESPONSIVE
 ========================================= */
 
+@media (min-width: 1024px) {
+    .hero {
+        min-height: 515px;
+    }
+
+    .hero-visual {
+        width: 74%;
+    }
+}
+
 @media (max-width: 768px) {
 
     .navbar {
